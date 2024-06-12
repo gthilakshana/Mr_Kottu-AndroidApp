@@ -1,0 +1,12 @@
+<!-- res/drawable/edit_text_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/premiumEditTextBackground" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <!-- Stroke (Border) -->
+
+</layer-list>

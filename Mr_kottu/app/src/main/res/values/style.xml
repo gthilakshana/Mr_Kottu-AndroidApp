@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- res/values/styles.xml -->
+    <style name="PremiumEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/premiumEditTextText</item>
+        <item name="android:textColorHint">@color/premiumEditTextHint</item>
+        <item name="android:textSize">16sp</item>
+        <!-- Add any other attributes you'd like to customize -->
+    </style>
+
+</resources>

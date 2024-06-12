@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_product_card.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- Product Image with Heart Icon -->
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="275dp"
+            android:layout_height="121dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            tools:srcCompat="@drawable/img4" />
+
+        <!-- Heart Icon -->
+        <ImageView
+            android:id="@+id/favoriteIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Favorite"
+            android:onClick="addToFavorites"
+
+            app:srcCompat="@drawable/baseline_favorite_24"
+            tools:srcCompat="@drawable/baseline_favorite_24" /> <!-- Handle click in the Activity/Fragment -->
+
+        <!-- Rest of your layout -->
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+
+            android:text="Efo"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:text="Price"
+        android:textColor="#252525"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="308dp"
+        android:layout_height="91dp"
+        android:layout_marginLeft="1dp"
+        android:text="Description" />
+
+
+    <!-- Add more elements as needed -->
+
+</LinearLayout>

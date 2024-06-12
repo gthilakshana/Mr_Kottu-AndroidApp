@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Your product card UI elements go here -->
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="110dp"
+        android:layout_height="141dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        app:srcCompat="@drawable/img4"
+        tools:srcCompat="@drawable/img4" />
+
+    <LinearLayout
+        android:layout_width="248dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Rs. "
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="142dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="1dp"
+                android:text="Efo"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ProductName"
+            android:layout_width="217dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:text="Delivery time  |  30mins"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="224dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="5dp"
+            android:text="N4,000"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Quintity"
+            android:layout_width="224dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="5dp"
+            android:text="N4,000"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Add more elements as needed -->
+
+</LinearLayout>

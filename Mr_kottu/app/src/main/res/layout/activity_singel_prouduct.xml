@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".SingelProuduct">
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="413dp"
+        android:layout_height="168dp"
+        android:background="@drawable/img4"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+    <LinearLayout
+        android:layout_width="398dp"
+        android:layout_height="592dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Pot Buriyani"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:text="shrimps,egg,pork,choy,cabbage.Noodles  fave or trying something completely new, we want your  tastebuds to be your happy buds"
+            android:textAlignment="viewStart"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="287dp"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:text="300g/530 kcal"
+                android:textColor="#252525"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="258dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingEnd="20dp"
+                android:text="1 portion"
+                android:textAlignment="viewEnd"
+                android:textColor="#252525"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="247dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:text="Mr.Kottu"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="131dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:textAlignment="viewEnd"
+                android:textSize="34sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                 />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:text="900 .00"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonIncrement"
+                android:layout_width="67dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#FFC107"
+                android:textAlignment="viewEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:icon="@drawable/baseline_add_24" />
+
+            <TextView
+                android:id="@+id/textViewQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="1"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonDecrement"
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#FFC107"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:icon="@drawable/baseline_remove_24" />
+
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            app:itemIconSize="30dp"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#131313"
+                android:text="Add to cart"
+                android:textColor="#FFFFFF"
+                app:iconTint="#FFFFFF" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+        <!-- Inside your LinearLayout -->
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="412dp"
+        android:layout_height="60dp"
+        android:background="@color/blue_1"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/abeezee"
+        android:text="Mr.Kottu account"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="47dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/blue_1"
+        android:backgroundTintMode="src_atop"
+        android:padding="10dp"
+        android:paddingEnd="5dp"
+        app:icon="@drawable/baseline_arrow_back_24"
+        app:iconSize="27dp"
+
+        app:iconTint="#252525"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

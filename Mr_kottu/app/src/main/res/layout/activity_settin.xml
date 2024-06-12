@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#710B0B"
+    tools:context=".SettingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="415dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="51dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#FDFDFD"
+        android:backgroundTintMode="src_atop"
+        android:padding="10dp"
+        android:paddingEnd="5dp"
+        app:icon="@drawable/baseline_arrow_back_24"
+        app:iconSize="27dp"
+        app:iconTint="#323232"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="372dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="21dp"
+        android:fontFamily="@font/abeezee"
+        android:text="Settings"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="81dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="165dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/user1" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="239dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="50dp"
+        android:text="gavrawa thilakshana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="EDIT ACCOUNT"
+        android:textColor="#08403B"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout20"
+        android:layout_width="414dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:backgroundTintMode="multiply"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9">
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Saved places"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/abeezee"
+            android:text="Home"
+            android:textAlignment="textStart"
+            android:textColor="#3C3C3C"
+            android:textStyle="bold"
+            app:icon="@drawable/baseline_home_245"
+            app:iconTint="#3C3C3C" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/abeezee"
+            android:text="Location Map"
+            android:textAlignment="textStart"
+            android:textColor="#3C3C3C"
+            android:textStyle="bold"
+            app:icon="@drawable/baseline_work_24"
+            app:iconTint="#3C3C3C" />
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="397dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout20"
+        app:layout_constraintVertical_bias="0.933">
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/abeezee"
+            android:text="Other options"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FDFDFD"
+            android:fontFamily="@font/abeezee"
+            android:text="Sign out"
+            android:textAlignment="textStart"
+            android:textColor="#08403B"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:icon="@drawable/baseline_assignment_return_24"
+            app:iconTint="#08403B" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

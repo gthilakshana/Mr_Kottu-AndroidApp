@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity"
+    tools:openDrawer="start">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="409dp"
+        android:layout_height="47dp"
+        android:background="#595959"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="310dp"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="8sp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:text="What are we ordering today?"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:paddingLeft="5dp"
+            app:icon="@drawable/baseline_search_25"
+            app:iconPadding="0dp"
+            app:iconSize="32dp"
+            app:iconTint="#FFC107"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:paddingLeft="15dp"
+            app:icon="@drawable/baseline_shopping_cart_24"
+            app:iconPadding="5dp"
+            app:iconSize="24dp"
+            app:iconTint="#252525"
+            app:iconTintMode="multiply" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="47dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_atop"
+        android:padding="10dp"
+        android:paddingEnd="5dp"
+        app:icon="@drawable/baseline_menu_22"
+        app:iconSize="27dp"
+        app:iconTint="#252525"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="234dp"
+        android:layout_height="31dp"
+        android:text="Location"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toEndOf="@+id/button22"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619" />
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="518dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="410dp"
+                    android:layout_height="185dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="185dp"
+                        android:layout_marginTop="1dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+
+                        <RelativeLayout
+                            android:layout_width="321dp"
+                            android:layout_height="157dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:context=".MainActivity">
+
+
+                            <ViewFlipper
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:autoStart="true"
+                                android:flipInterval="6000"
+                                android:inAnimation="@android:anim/slide_in_left"
+                                android:outAnimation="@android:anim/slide_out_right"
+                                android:outlineAmbientShadowColor="@color/black"
+                                android:outlineSpotShadowColor="@color/black">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="0dp"
+
+                                    android:layout_marginEnd="0dp"
+                                    android:background="@drawable/specials_card"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+                                <ImageView
+                                    android:id="@+id/imageView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="0dp"
+
+                                    android:layout_marginEnd="0dp"
+                                    android:background="@drawable/banner2"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+                                <ImageView
+                                    android:id="@+id/imageView5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="0dp"
+
+                                    android:layout_marginEnd="0dp"
+                                    android:background="@drawable/banner4"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+                            </ViewFlipper>
+                        </RelativeLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+
+                //--------------------//
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="#F4F4F4"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icons8_kawaii_noodle_48" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton42"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="#F4F4F4"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icons8_kawaii_soda_48" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton41"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/circle_background"
+
+                        android:backgroundTint="#F4F4F4"
+                        android:src="@drawable/icons8_kawaii_taco_48" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton411"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/circle_background"
+
+                        android:backgroundTint="#F4F4F4"
+                        android:src="@drawable/icons8_kawaii_steak_48" />
+                </LinearLayout>
+
+
+                //--------------//
+
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1549dp"
+                    android:layout_marginTop="1dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                    <!-- Other UI elements or layouts if needed -->
+
+                    <LinearLayout
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="243dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:paddingStart="10dp"
+                            android:text="Popular picks "
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/button23"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:backgroundTint="#F9A825"
+                            android:text="See all"
+                            android:textColor="#222222"
+                            android:textSize="10sp"
+                            app:strokeColor="#AD1457" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="352dp"
+                        android:layout_height="260dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#FFFFFF"
+                        android:clipToPadding="false"
+                        android:overScrollMode="never"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        tools:listitem="@layout/item_product_card" />
+
+                    <LinearLayout
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="243dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:paddingStart="10dp"
+                            android:text="Fastest delivery "
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/button24"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:backgroundTint="#F9A825"
+                            android:text="See all"
+                            android:textColor="#222222"
+                            android:textSize="10sp"
+                            app:strokeColor="#AD1457" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView2"
+                        android:layout_width="355dp"
+                        android:layout_height="255dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#FFFFFF"
+                        android:clipToPadding="false"
+                        android:overScrollMode="never"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        tools:listitem="@layout/item_product_card" />
+
+
+                    <LinearLayout
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView110"
+                            android:layout_width="243dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:paddingStart="10dp"
+                            android:text="Fastest delivery "
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView11"
+                        android:layout_width="359dp"
+                        android:layout_height="334dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#FFFFFF"
+                        android:clipToPadding="false"
+                        android:overScrollMode="never"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="16dp"
+
+                        tools:listitem="@layout/item_product_card2" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //----------------------//
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="106dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:context=".ProfileActivity">
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="21dp"
+                android:background="@drawable/bottom_background"
+
+                android:elevation="2dp"
+                android:outlineAmbientShadowColor="@color/black"
+
+                android:outlineSpotShadowColor="@color/black"
+                app:itemIconSize="30dp"
+                app:itemIconTint="@drawable/item_selector"
+                app:itemRippleColor="@android:color/transparent"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_menu" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
