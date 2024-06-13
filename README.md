@@ -31,6 +31,8 @@ MrKottu_admin => AdminApp
 
 
 <img src="images/login.png" alt="photo1" width="250">  | <img src="images/home.png" alt="photo2" width="250">  |  <img src="images/wellcome.png" alt="photo3" width="250">
+##
+<img src="images/admin 1.png" alt="photo1" width="250">  | <img src="images/dashboard.png" alt="photo2" width="250">  |  <img src="images/addproduct.png" alt="photo3" width="250">
 
 
 
